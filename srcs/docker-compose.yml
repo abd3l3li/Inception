@@ -1,6 +1,5 @@
-version: "3.9" # do i really need it?
+version: '3.8'
 
-# does spelling matters?
 services:
   mariadb:
     build: ./requirements/mariadb
@@ -22,10 +21,9 @@ volumes:
 networks:
   inception:
 
-# encrypted mount at run time in memory when container is running.
+# mounted at run time
 secrets:
   db_root_password:
     file: ../secrets/db_root_password.txt
   db_user_password:
     file: ../secrets/db_user_password.txt
-
