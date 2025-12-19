@@ -1,0 +1,26 @@
+#!/bin/sh
+set -e
+
+DB_NAME="$MYSQL_DATABASE"
+DB_USER="$MYSQL_USER"
+DB_PASS="$(cat /run/secrets/db_user_password)"
+
+# on the container we miss this DIR
+mkdir -p /run/mysqld
+chown -R mysql:mysql /run/mysqld
+
+# wrapped scritp that handles mysqld
+mysqld_safe &
+sleep 5
+
+mysql <<EOF
+CREATE DATABASE IF NOT EXISTS ${DB_NAME};
+CREATE USER IF NOT EXISTS '${DB_USER}'@'%' IDENTIFIED BY '${DB_PASS}';
+GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';
+FLUSH PRIVILEGES;
+EOF
+
+mysqladmin shutdown
+
+exec mysqld_safe
+
