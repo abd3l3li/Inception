@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     mariadb-client
 
+# for php-fpm
 RUN mkdir -p /run/php
 
 COPY setup.sh /setup.sh

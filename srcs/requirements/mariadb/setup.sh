@@ -5,17 +5,24 @@ DB_NAME="$MYSQL_DATABASE"
 DB_USER="$MYSQL_USER"
 DB_PASS="$(cat /run/secrets/db_user_password)"
 
+
+if [ ! -d "/var/lib/mysql/mysql" ]; then
+
+    echo "=> Initializing MariaDB data directory..."
+    mysql_install_db --user=mysql --datadir=/var/lib/mysql
+
+fi
+
+sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mariadb.conf.d/50-server.cnf
+
 # on the container we miss this DIR
 mkdir -p /run/mysqld
 chown -R mysql:mysql /run/mysqld
 
-# giving access to other containers
-#sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mariadb.conf.d/50-server.cnf
-
 # wrapped scritp that handles mysqld
 mysqld_safe &
 
-sleep 5s
+sleep 7s
 
 mysql <<EOF
 CREATE DATABASE IF NOT EXISTS ${DB_NAME};
