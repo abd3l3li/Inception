@@ -7,12 +7,11 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir -p /etc/nginx/ssl
 
-# self-signed
 RUN openssl req -x509 -nodes -days 365 \
     -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com" \
     -newkey rsa:2048 \
-    -keyout /etc/nginx/ssl/nginx.key \
-    -out /etc/nginx/ssl/nginx.crt
+    -keyout /etc/nginx/ssl/inception.key \
+    -out /etc/nginx/ssl/inception.crt
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 

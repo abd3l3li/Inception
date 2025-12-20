@@ -9,9 +9,13 @@ DB_PASS="$(cat /run/secrets/db_user_password)"
 mkdir -p /run/mysqld
 chown -R mysql:mysql /run/mysqld
 
+# giving access to other containers
+#sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mariadb.conf.d/50-server.cnf
+
 # wrapped scritp that handles mysqld
 mysqld_safe &
-sleep 5
+
+sleep 5s
 
 mysql <<EOF
 CREATE DATABASE IF NOT EXISTS ${DB_NAME};

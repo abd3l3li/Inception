@@ -2,6 +2,10 @@
 
 set -e
 
+
+# PHP-FPM is listening on port 9000 instead of socket
+sed -i 's/listen = \/run\/php\/php8.2-fpm.sock/listen = 9000/' /etc/php/8.2/fpm/pool.d/www.conf
+
 DB_NAME="$MYSQL_DATABASE"
 DB_USER="$MYSQL_USER"
 DB_PASS="$(cat /run/secrets/db_user_password)"
