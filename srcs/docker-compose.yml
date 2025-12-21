@@ -1,4 +1,4 @@
-#version: '3.8'
+# version: '3.8'
 
 services:
   mariadb:
@@ -42,7 +42,7 @@ services:
     volumes:
       - wordpress_data:/var/www/html:ro
     ports:
-      - "443:443"
+      - "127.0.0.4:443:443"
     networks:
       - inception
     restart: unless-stopped
