@@ -1,4 +1,4 @@
 *.env
 .env
-./secrets/*
-!/secrets/.gitkeep
+secrets/*
+!secrets/.getkeep
