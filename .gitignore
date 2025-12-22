@@ -1,4 +1,8 @@
+# envireonment files
 *.env
 .env
-secrets/*
+
+
+# secret files
+secrets/
 !secrets/.getkeep
