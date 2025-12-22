@@ -120,7 +120,10 @@ make help   # Show all the make commands
 - Practice the commands before using docker compose.
 - AI were used for enhancing the scripts and for double checking, In addition of setuping the Docs
 
-
+## What next?
+- For getting deep in the project concepts and usage, check:
+  - **[USER_DOC](https://github.com/abd3l3li/Inception/blob/master/USER_DOC.md)**
+  - **[DEV_DOC](https://github.com/abd3l3li/Inception/blob/master/DEV_DOC.md)**
 ## Author
 
 __abel-baz - 42 Network__
