@@ -118,7 +118,7 @@ make help   # Show all the make commands
     - https://youtu.be/DM65_JyGxCo?si=YyAzsYblHzyPwLuC
     - https://youtu.be/67Kfsmy_frM?si=NtCUEHqXvoVz_uWw
 - Practice the commands before using docker compose.
-- AI were used for enhancing the scripts and for double checking, In addition of setuping the Docs
+- AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
 
 ## What's next?
 - For getting deep in the project concepts and usage, check:
