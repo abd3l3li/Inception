@@ -490,7 +490,7 @@ docker-compose -f srcs/docker-compose.yml build  # Uses cache
 docker-compose -f srcs/docker-compose.yml build --no-cache  # Ignores cache
 ```
 
-> [NOTE]
+> [!NOTE]
 > - if you change the port add it in the wp-config.php file too
 > - e.g. define( 'DB_HOST', 'https://ysahraou.42.fr:8443' );
 > - e.g. define('WP_SITEURL', 'https://ysahraou.42.fr:8443');
