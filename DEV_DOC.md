@@ -489,3 +489,10 @@ docker images | grep inception
 docker-compose -f srcs/docker-compose.yml build  # Uses cache
 docker-compose -f srcs/docker-compose.yml build --no-cache  # Ignores cache
 ```
+
+> [NOTE]
+> - if you change the port add it in the wp-config.php file too
+> - e.g. define( 'DB_HOST', 'https://ysahraou.42.fr:8443' );
+> - e.g. define('WP_SITEURL', 'https://ysahraou.42.fr:8443');
+> - replace 8443 with your new port number and add this to volumes e.g. in the docker-compose.yml file
+
