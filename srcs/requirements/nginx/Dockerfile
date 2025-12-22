@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:bookworm
 
 RUN apt-get update && apt-get install -y \
     nginx \
@@ -15,6 +15,7 @@ RUN openssl req -x509 -nodes -days 365 \
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 8443
+EXPOSE 443
 
 CMD ["nginx", "-g", "daemon off;"]
+# ENTRYPOINT ["nginx", "-g", "daemon off;"]

@@ -1,6 +1,7 @@
 # envireonment files
 *.env
 .env
+srcs/.env
 
 
 # secret files

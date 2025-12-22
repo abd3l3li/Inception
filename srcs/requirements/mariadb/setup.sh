@@ -13,13 +13,14 @@ if [ ! -d "/var/lib/mysql/mysql" ]; then
 
 fi
 
+# allow remote connections
 sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mariadb.conf.d/50-server.cnf
 
-# on the container we miss this DIR
+# on the container we miss this DIR for socket file
 mkdir -p /run/mysqld
 chown -R mysql:mysql /run/mysqld
 
-# wrapped scritp that handles mysqld
+# wrapped script that handles mysqld
 mysqld_safe &
 
 sleep 7s
