@@ -139,21 +139,6 @@ mkdir -p /home/login/data/wordpress
 docker-compose -f srcs/docker-compose.yml up -d --build
 ```
 
-### Using Docker Compose Directly
-```bash
-# Build images
-docker-compose -f srcs/docker-compose.yml build
-
-# Start containers
-docker-compose -f srcs/docker-compose.yml up -d
-
-# Stop containers
-docker-compose -f srcs/docker-compose.yml down
-
-# View logs
-docker-compose -f srcs/docker-compose.yml logs -f
-```
-
 ## Managing Containers and Volumes
 
 ### Container Management
@@ -375,13 +360,6 @@ docker-compose -f srcs/docker-compose.yml build nginx
 docker-compose -f srcs/docker-compose.yml up -d nginx
 ```
 
-### Debugging
-
-**Check service is responding:**
-```bash
-docker exec nginx nginx -t  # Test nginx config
-docker exec wordpress php -v  # Check PHP version
-docker exec mariadb mysql -e "SELECT 1;"  # Test database
 ```
 
 **Network debugging:**
@@ -399,18 +377,6 @@ docker port nginx
 **Monitor resource usage:**
 ```bash
 docker stats
-```
-
-### Common Development Tasks
-
-**View PHP error log:**
-```bash
-docker exec wordpress tail -f /var/log/php8.2-fpm.log
-```
-
-**Clear WordPress cache:**
-```bash
-docker exec wordpress wp cache flush --allow-root
 ```
 
 ## Project Structure Explained
@@ -472,27 +438,11 @@ docker network prune
 docker system prune -a --volumes
 ```
 
-### Performance Optimization
 
-**View image layers:**
-```bash
-docker history inception-wordpress
-```
-
-**Check image size:**
-```bash
-docker images | grep inception
-```
-
-**Reduce build time with cache:**
-```bash
-docker-compose -f srcs/docker-compose.yml build  # Uses cache
-docker-compose -f srcs/docker-compose.yml build --no-cache  # Ignores cache
-```
 
 > [!NOTE]
-> - if you change the port add it in the wp-config.php file too
-> - e.g. define( 'DB_HOST', 'https://ysahraou.42.fr:8443' );
-> - e.g. define('WP_SITEURL', 'https://ysahraou.42.fr:8443');
-> - replace 8443 with your new port number and add this to volumes e.g. in the docker-compose.yml file
+> - if you changed the published port, add it to the wp-config.php file as well
+> - e.g. define('WP_HOME','https://${USER}.42.fr:8443');
+> - e.g. define('WP_SITEURL','https://${USER}.42.fr:8443');
+> - replace 8443 with the new port number.
 
