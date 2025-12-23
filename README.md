@@ -112,17 +112,17 @@ make help   # Show all the make commands
 
 ## Resources
 
-- Dockerfile: https://docs.docker.com/reference/dockerfile/
-- Tutorials:
+- [X] Dockerfile: https://docs.docker.com/reference/dockerfile/
+- [X] Tutorials:
     - https://youtu.be/DQdB7wFEygo?si=vvv091_LkqOoIESe
     - https://youtu.be/b0HMimUb4f0?si=3fzE6LuTYqY3kbr8
     - https://youtube.com/playlist?list=PLTk5ZYSbd9Mg51szw21_75Hs1xUpGObDm&si=wAg_jLCHTwj0pq2H
     - https://youtu.be/DM65_JyGxCo?si=YyAzsYblHzyPwLuC
     - https://youtu.be/67Kfsmy_frM?si=NtCUEHqXvoVz_uWw
-- Practice the commands before using docker compose.
-- AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
+- [X] Practice the commands before using docker compose.
+- [X] AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
 
- - [X] You clould also check the subject file from [HERE](https://github.com/abd3l3li/Inception/blob/master/inception.pdf).
+   - You clould also check the subject file from [HERE](https://github.com/abd3l3li/Inception/blob/master/inception.pdf).
 
 ## What's next?
 - For getting deep in the project concepts and usage, check:
