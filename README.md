@@ -3,7 +3,7 @@
 *This project has been created as part of the 42 curriculum by abel-baz.*
 
 ---
-![IMG](https://github.com/abd3l3li/Inception/issues/1#issue-3758565125)
+![IMG](<img width="1277" height="691" alt="Image" src="https://github.com/user-attachments/assets/c27ddb9d-b9a2-446c-a634-d4093cfaa40b" />)
 ---
 
 ## Description
