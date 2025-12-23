@@ -3,6 +3,8 @@
 *This project has been created as part of the 42 curriculum by abel-baz.*
 
 ---
+[IMG](https://github.com/abd3l3li/Inception/issues/1#issue-3758565125)
+---
 
 ## Description
 
