@@ -60,7 +60,7 @@ chmod 600 secrets/*.txt
 Edit and add `srcs/.env`:
 ```
 MYSQL_DATABASE=wordpress
-MYSQL_USER=wpuser
+MYSQL_USER=wpuserhttps://github.com/abd3l3li/Inception/blob/master/inception.pdf
 DOMAIN_NAME=login.42.fr
 WP_ADMIN_USER=login
 WP_ADMIN_EMAIL=login@example.com
@@ -122,7 +122,7 @@ make help   # Show all the make commands
 - Practice the commands before using docker compose.
 - AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
 
-  [-] You clould also check the subject file from (HERE)[https://github.com/abd3l3li/Inception/blob/master/inception.pdf].
+ - [X] You clould also check the subject file from (HERE)[https://github.com/abd3l3li/Inception/blob/master/inception.pdf].
 
 ## What's next?
 - For getting deep in the project concepts and usage, check:
