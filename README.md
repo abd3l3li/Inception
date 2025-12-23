@@ -122,7 +122,7 @@ make help   # Show all the make commands
 - [X] Practice the commands before using docker compose.
 - [X] AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
 
-   - You clould also check the subject file from [HERE](https://github.com/abd3l3li/Inception/blob/master/inception.pdf).
+- You clould also check the subject file from [HERE](https://github.com/abd3l3li/Inception/blob/master/inception.pdf).
 
 ## What's next?
 - For getting deep in the project concepts and usage, check:
