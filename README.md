@@ -114,11 +114,11 @@ make help   # Show all the make commands
 
 - [X] Dockerfile: https://docs.docker.com/reference/dockerfile/
 - [X] Tutorials:
-    - https://youtu.be/DQdB7wFEygo?si=vvv091_LkqOoIESe
-    - https://youtu.be/b0HMimUb4f0?si=3fzE6LuTYqY3kbr8
-    - https://youtube.com/playlist?list=PLTk5ZYSbd9Mg51szw21_75Hs1xUpGObDm&si=wAg_jLCHTwj0pq2H
-    - https://youtu.be/DM65_JyGxCo?si=YyAzsYblHzyPwLuC
-    - https://youtu.be/67Kfsmy_frM?si=NtCUEHqXvoVz_uWw
+    >- https://youtu.be/DQdB7wFEygo?si=vvv091_LkqOoIESe
+    >- https://youtu.be/b0HMimUb4f0?si=3fzE6LuTYqY3kbr8
+    >- https://youtube.com/playlist?list=PLTk5ZYSbd9Mg51szw21_75Hs1xUpGObDm&si=wAg_jLCHTwj0pq2H
+    >- https://youtu.be/DM65_JyGxCo?si=YyAzsYblHzyPwLuC
+    >- https://youtu.be/67Kfsmy_frM?si=NtCUEHqXvoVz_uWw
 - [X] Practice the commands before using docker compose.
 - [X] AI were used for enhancing the scripts and for double checking, In addition of setupping the Docs
 
