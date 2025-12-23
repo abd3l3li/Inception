@@ -73,7 +73,7 @@ make
 
 6. **Access the site**
 
-Open browser: `https://abel-baz.42.fr`
+Open browser: `https://login.42.fr`
 
 (Accept the self-signed certificate warning)
 
