@@ -60,7 +60,7 @@ chmod 600 secrets/*.txt
 Edit and add `srcs/.env`:
 ```
 MYSQL_DATABASE=wordpress
-MYSQL_USER=wpuserhttps://github.com/abd3l3li/Inception/blob/master/inception.pdf
+MYSQL_USER=wpuser
 DOMAIN_NAME=login.42.fr
 WP_ADMIN_USER=login
 WP_ADMIN_EMAIL=login@example.com
