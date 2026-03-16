@@ -110,6 +110,7 @@ make help   # Show all the make commands
 
 **Docker Volumes vs Bind Mounts:** Volumes are Docker-managed storage, bind mounts use specific host paths. This project uses bind mounts (`/home/login/data/`) for easy access, backup, and subject compliance.
 
+
 ## Resources
 
 - [X] Dockerfile: https://docs.docker.com/reference/dockerfile/
